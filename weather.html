@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="weather.css">
+    <!-- js file -->
+    <script src="weather.js"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Courgette&family=Nunito&family=Philosopher&family=Playfair+Display&family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="result" class="weather d-flex align-items-center justify-content-center">
+            <!-- <a type="button" href="" class="btn btn-danger" >Click</a> -->
+            <div class="weather-card p-5">
+                <h1 class="head text-center text-light p-2">Cloudy<span class="text-info head">Sky.com</span></h1>
+                <p class="text-center text-light">Eerily Accurate Weather Data with Rain Predictions</p>
+                <div class="home-img">
+                    <!-- <img src="images/lightning-clouds.png" alt=""> -->
+                </div>
+                <div class="d-flex">
+                    <input id="inputname" type="text" class="search-bar w-100 border border-0 rounded-pill" placeholder="Enter a city name"/>
+                    <button onclick="wobj.change()" type="button" class="search-btn btn btn-info rounded-pill ms-2 text-light">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

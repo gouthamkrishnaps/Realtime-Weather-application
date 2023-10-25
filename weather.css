@@ -1,0 +1,103 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-image: url(images/display3.jpg);
+    background-size: cover;
+    /* animation: homebg 15s infinite; */
+}
+/* @keyframes homebg {
+    0%{
+        background-image: url(images/display3.jpg);
+        background-size: cover;
+    }
+    25%{
+        background-image: url(images/display.jpg);
+        background-size: cover;
+    }
+    50%{
+        background-image: url(images/display1.jpg);
+        background-size: cover;
+    }
+    75%{
+        background-image: url(images/display2.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(images/display3.jpg);
+        background-size: cover;
+    }
+} */
+#result{
+    height: 100vh;
+    width: 100%;
+}
+.weather-card{
+    height: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.149);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+.weather-result{
+    width: 600px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.149);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+.search-bar ,.search-btn{
+    box-shadow: 2px 2px 2px 0px grey;
+    height: 40px;
+}
+.head{
+    text-shadow: 1px 0px black;
+    font-family: 'Borel', cursive;
+    font-weight: 700;
+}
+.home-img{
+    height: 200px;
+    animation: imageslide 10s infinite;
+}
+@keyframes imageslide{
+    0%{
+        background-image: url('images/sunclouds.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    25%{
+        background-image: url('images/lightning-clouds.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    50%{
+        background-image: url('images/darkclouds.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    75%{
+        background-image: url('images/rain-clouds.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    100%{
+        background-image: url('images/sunclouds.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.home-img img{
+    width: 100%;
+}
+::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: .5;
+    /* font-family: italic; */
+    padding: 10px;
+  }
+.temp{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: 600;
+}
